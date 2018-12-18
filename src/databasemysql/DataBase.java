@@ -39,16 +39,10 @@ import java.sql.SQLException;
 
 public class DataBase {
 	private static Connection conexao;
-	private static String url = "jdbc:mysql://localhost/dadu?autoReconnect=true&useSSL=false";
-	private static String user = "root";
-	private static String password = "";
+	private static String url = "jdbc:mysql://localhost/SEU_BANCO?autoReconnect=true&useSSL=false";
+	private static String user = "Altere-me para seu usuário";
+	private static String password = "Altere-me para sua senha";
 
-	public DataBase() {
-		url = "jdbc:mysql://localhost/dadu?autoReconnect=true&useSSL=false";
-		user = "root";
-		password = "";
-	}
-	
 	// GETTER E SETTER
 	public static Connection getConexao() {
 		return conexao;
